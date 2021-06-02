@@ -16,15 +16,19 @@ tbl_parentalLevel:
     education_level
 
 
-tbl_Ubication
-    id, 
-    City,
-    State,
+tbl_City:
+    Id,
+    Name,
+    fk_State
+
+tbl_State:
+    Id,
+    Name
 
 tbl_Universidad
     id,
     NombreUniversidad
-    fk_Ubication
+    fk_City
     fk_Score
 
 tbl_Scores:
