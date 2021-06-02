@@ -1,0 +1,46 @@
+tbl_Estuadinte:
+    Id,
+    Nombre
+    Apellido,
+    International, 
+    MathScore
+    ReadingScore,
+    WritingScore
+    fk_Program
+    fk_ParentalLevel
+
+
+
+tbl_parentalLevel:
+    id,
+    education_level
+
+
+tbl_Ubication
+    id, 
+    City,
+    State,
+
+tbl_Universidad
+    id,
+    NombreUniversidad
+    fk_Ubication
+    fk_Score
+
+tbl_Scores:
+    fk_University
+
+
+tbl_Program
+    id,
+    Name,
+    duration
+    fk_University
+    fk_Delivery
+
+tbl_Delivery
+    id,
+    delivery_type
+
+
+
