@@ -26,13 +26,13 @@ var ubicaciones = ubicationWorksheet.map((rows)=> {
 ID = 1;
 
 var StateList = ubicationWorksheet.map(ubication=>{
-    return ubication.STATE;
+        return ubication.STATE;
 }).filter((state, index, States)=>{
-    return index === States.indexOf(state);
+        return index === States.indexOf(state);
 }).map(state=>{
-    var stateJSON = {Id: ID, Name: state}
-    ID++;
-    return stateJSON;
+        var stateJSON = {Id: ID, Name: state}
+        ID++;
+        return stateJSON;
 })
 
 ID = 1
@@ -55,7 +55,6 @@ CitiesList.forEach(city => {
 
     ubicaciones.forEach(ubi=>{
         if(city.Name === ubi.City) ubicationRow = ubi;
-
     })
 
 
