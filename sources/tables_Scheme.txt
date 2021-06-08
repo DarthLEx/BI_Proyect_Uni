@@ -11,38 +11,42 @@ tbl_Estuadinte:
 
 
 
-tbl_parentalLevel:
+tbl_parentalLevel: ready
     id,
     education_level
 
 
-tbl_City:
+tbl_City: ready
     Id,
     Name,
     fk_State
 
-tbl_State:
+tbl_State: ready
     Id,
     Name
 
-tbl_Universidad
+tbl_Universidad: ready
     id,
     NombreUniversidad
     fk_City
-    fk_Score
+    
 
-tbl_Scores:
+tbl_Scores: ready
     fk_University
+    nationa_Rank
+    qualityEducation,
+    alumniEmployment
+    publications,
+    citations
 
 
-tbl_Program
+tbl_Program: ready
     id,
     Name,
-    duration
     fk_University
     fk_Delivery
 
-tbl_Delivery
+tbl_Delivery: ready
     id,
     delivery_type
 
