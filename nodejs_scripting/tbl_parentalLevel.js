@@ -20,7 +20,6 @@ let tbl_parentalLevel = sourceJSON.map(value=>{
     
 })
 
-
 console.log(tbl_parentalLevel);
 
 var newWb = xlsx.utils.book_new();
