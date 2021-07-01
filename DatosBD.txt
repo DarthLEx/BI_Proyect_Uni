@@ -1,0 +1,12 @@
+tbl_Cities: 173
+tbl_States: 40
+tbl_Delivery: 8
+tbl_parentalLevel: 6
+tbl_Performance: 8000
+tbl_Program: 312
+tbl_Scores: 260
+tbl_socioEconomicLevel: 2000
+tbl_Students: 2000
+tbl_Universities: 219
+
+Total: 13.018
