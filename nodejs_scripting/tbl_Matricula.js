@@ -9,7 +9,6 @@ const tbl_Estudiantes = xlsx.utils.sheet_to_json(xlsx.readFile('tbl_Students.xls
 
 let Matriculas = [];
 
-//let matrizProbabilidades =  [true, true, true, false, true, true, true, false, false]
 
 Matriculas = tbl_Estudiantes.map(value=>{
 

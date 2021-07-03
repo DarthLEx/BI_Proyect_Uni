@@ -1,13 +1,56 @@
-tbl_Estuadinte:
+
+TODO: Nivelacademico, socioeconomico
+
+tbl_Estuadiante: ready
     Id,
     Nombre
     Apellido,
-    International, 
-    MathScore
-    ReadingScore,
-    WritingScore
+    Sexo,
+    Edad, 
+    Nacionality,
+    gradeLevel,
     fk_Program
     fk_ParentalLevel
+
+tbl_Matricula:
+    fk_Estudiante
+    tuitionCostPerYear
+    fk_Programa
+    fk_SchoolarShip
+
+tbl_Schoolarships:
+    id,
+    Type
+    TotalAmount,
+    TuitionPay,
+    TuitionPercent,
+    HousingPay,
+    FoodPay,
+    HealthcarePay,
+    TransportPay,
+    StudyingMaterialPay
+    fk_Entity
+
+
+tbl_Entity:
+    id,
+    EntityName
+   
+
+tbl_socioEconomicLevel:
+    salarioAnual,
+    tipoVivienda,
+    zonaVivienda,
+    tieneVehiculo,
+    cantidadPersonaACargo,
+    cabezaFamila
+    
+
+tbl_Performance: ready
+    MathScore,
+    ReadingScore,
+    WritingScore,
+    fk_Student
 
 
 
@@ -28,6 +71,7 @@ tbl_State: ready
 tbl_Universidad: ready
     id,
     NombreUniversidad
+    typeOfUni
     fk_City
     
 
@@ -37,6 +81,7 @@ tbl_Scores: ready
     qualityEducation,
     alumniEmployment
     publications,
+    year,
     citations
 
 

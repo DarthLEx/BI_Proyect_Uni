@@ -1,6 +1,7 @@
 const xlsx = require('xlsx');
 
 const tbl_Matricula = xlsx.utils.sheet_to_json(xlsx.readFile('tbl_Matricula.xlsx').Sheets['tbl_Matricula']);
+const tbl_Entity = xlsx.utils.sheet_to_json(xlsx.readFile('tbl_Entity.xlsx').Sheets['Hoja1']);
 
 var Id_gen = 0;
 var percentTuition
@@ -62,12 +63,26 @@ for(let i = 320; i <= 845; i++){
     Id_gen++;
 }
 
+let allSS = [...BecasTotales, ...BecasParciales];
 
+
+for(let i = 0; i < allSS.length; i++ ){
+    let index = tbl_Entity.length;
+    console.lo
+    allSS[i].fk_Entity = tbl_Entity[getRandomInt(0, index)].Id;
+
+    //console.log(index);
+
+}
+
+
+
+console.log(allSS);
 
 
 
 var newWb = xlsx.utils.book_new();
-var newWS = xlsx.utils.json_to_sheet([...BecasTotales, ...BecasParciales]);
+var newWS = xlsx.utils.json_to_sheet(allSS);
 xlsx.utils.book_append_sheet(newWb, newWS, "tbl_Schoolarships");
 
 xlsx.writeFile(newWb, "tbl_Schoolarships.xlsx");
